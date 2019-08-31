@@ -11,4 +11,5 @@ chmod 600 id_rsa_tem_accounting
 ssh-add id_rsa_tem_accounting
 
 # commit the assets in build/ to the gh-pages branch and push to GitHub using SSH
+cd $TRAVIS_BUILD_DIR
 ./node_modules/.bin/gh-pages -d build/ -b gh-pages -r git@github.com:${TRAVIS_REPO_SLUG}.git
