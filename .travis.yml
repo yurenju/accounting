@@ -1,0 +1,11 @@
+language: python
+install:
+  - pip install beancount
+  - npm install
+script:
+  - bean-bake main.bean build
+deploy:
+  provider: script
+  script: sh tools/deploy.sh
+  on:
+    branch: master
