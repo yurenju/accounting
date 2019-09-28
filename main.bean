@@ -12,12 +12,35 @@
 ; Yuren 代墊的欠款
 2019-08-30 open Liabilities:Yuren TWD
 
+2019-08-30 open Income:Sponsor:ETH
+2019-08-30 open Income:Sponsor:TWD
+
 option "operating_currency" "TWD"
 
 2019-08-30 * "Yuren" "代墊"
-    Assets:Bank:Cathy:TWD 100,000 TWD
+    Assets:Bank:Cathy:TWD                 100,000.0 TWD
     Liabilities:Yuren
 
 2019-08-30 * "初始金額"
-    Assets:Ethereum:GnosisWallet:ETH 0.866521001981 ETH {4,672 TWD}
+    Assets:Ethereum:GnosisWallet:ETH            0.866521001981 ETH {4,672 TWD}
     Equity:Opening-Balances
+
+2019-09-02 * "GPUMINE & Block2" "贊助金"
+    tx: "0x10b311cd3c53440c5fde6b087a9553c8d081ff515011e7092683a250de14da24"
+    Assets:Ethereum:GnosisWallet:ETH            5.0 ETH {5,382.9 TWD}
+    Income:Sponsor:ETH
+
+2019-09-19 * "imToken" "贊助金"
+    tx: "0x54299a3c4b915e96e07bb79fd150276ab85f6154029f16828cd8439531302113"
+    Assets:Ethereum:GnosisWallet:ETH            7.796 ETH {6,461.8 TWD}
+    Income:Sponsor:ETH
+
+2019-09-24 * "Aragon" "贊助金"
+    tx: "0x8262c3c6f2998e794110309225be023f067c49144704f4ca1d4709a5a2fe9b8e"
+    Assets:Ethereum:GnosisWallet:ETH            7.71 ETH {6,100.0 TWD}
+    Income:Sponsor:ETH
+
+2019-09-27 * "Ehtereum Foundation" "贊助金"
+    tx: "0xe908002b0c6b57b96a82dd0b6e720244016c6c1cd59fbeb442107aefb2a7b937"
+    Assets:Ethereum:GnosisWallet:ETH           23.9908834643 ETH {5,200.0 TWD}
+    Income:Sponsor:ETH
