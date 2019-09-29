@@ -1,3 +1,5 @@
+include "eth-prices.bean"
+
 2019-08-30 open Assets:Cash:TWD TWD
 
 ; 放在 Yuren 的國泰世華帳戶代管
@@ -22,7 +24,7 @@ option "operating_currency" "TWD"
     Liabilities:Yuren
 
 2019-08-30 * "初始金額"
-    Assets:Ethereum:GnosisWallet:ETH            0.866521001981 ETH {4,672 TWD}
+    Assets:Ethereum:GnosisWallet:ETH            0.866521001981 ETH {5,392.0 TWD}
     Equity:Opening-Balances
 
 2019-09-02 * "GPUMINE & Block2" "贊助金"
