@@ -17,6 +17,9 @@ include "eth-prices.bean"
 2019-08-30 open Income:Sponsor:ETH
 2019-08-30 open Income:Sponsor:TWD
 
+2019-10-04 open Expenses:Supplies
+2019-10-04 open Expenses:Bank:TransactionFee
+
 option "operating_currency" "TWD"
 
 2019-08-30 * "Yuren" "代墊"
@@ -46,3 +49,8 @@ option "operating_currency" "TWD"
     tx: "0xe908002b0c6b57b96a82dd0b6e720244016c6c1cd59fbeb442107aefb2a7b937"
     Assets:Ethereum:GnosisWallet:ETH           23.9908834643 ETH {5,200.0 TWD}
     Income:Sponsor:ETH
+
+2019-10-04 * "豐島國際有限公司" "矽膠手環訂金"
+    Expenses:Supplies                        3801.0 TWD
+    Expenses:Bank:TransactionFee               15.0 TWD
+    Assets:Bank:Cathy:TWD
