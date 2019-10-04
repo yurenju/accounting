@@ -7,12 +7,13 @@ include "eth-prices.bean"
 
 ; Taipei Ethereum Meetup Gnosis Wallet
 ; https://etherscan.io/address/0x91a06469ded8eeb064c7a273ee947e380e1494d8
-2019-08-30 open Assets:Ethereum:GnosisWallet:ETH ETH
+2019-08-30 open Assets:Ethereum:GnosisWallet:ETH ETH "FIFO"
 
 2019-08-30 open Equity:Opening-Balances
 
 ; Yuren 代墊的欠款
 2019-08-30 open Liabilities:Yuren TWD
+2019-10-04 close Liabilities:Yuren
 
 2019-08-30 open Income:Sponsor:ETH
 2019-08-30 open Income:Sponsor:TWD
@@ -63,4 +64,8 @@ option "operating_currency" "TWD"
 2019-10-04 * "豐島國際有限公司" "矽膠手環訂金"
     Expenses:Supplies                        3801.0 TWD
     Expenses:Bank:TransactionFee               15.0 TWD
+    Assets:Bank:Cathy:TWD
+
+2019-10-04 * "Yuren" "代墊取回"
+    Liabilities:Yuren                      100,000.0 TWD
     Assets:Bank:Cathy:TWD
