@@ -20,6 +20,7 @@ include "eth-prices.bean"
 
 2019-10-04 open Expenses:Supplies
 2019-10-04 open Expenses:Bank:TransactionFee
+2019-10-09 open Expenses:Venue
 
 option "operating_currency" "TWD"
 
@@ -68,4 +69,9 @@ option "operating_currency" "TWD"
 
 2019-10-04 * "Yuren" "代墊取回"
     Liabilities:Yuren                      100,000.0 TWD
+    Assets:Bank:Cathy:TWD
+
+2019-10-09 * "智成" "代墊場地頭期款"
+    Expenses:Venue                         40,000.0 TWD
+    Expenses:Bank:TransactionFee               15.0 TWD
     Assets:Bank:Cathy:TWD
