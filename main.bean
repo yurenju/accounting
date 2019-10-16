@@ -8,6 +8,7 @@ include "eth-prices.bean"
 ; Taipei Ethereum Meetup Gnosis Wallet
 ; https://etherscan.io/address/0x91a06469ded8eeb064c7a273ee947e380e1494d8
 2019-08-30 open Assets:Ethereum:GnosisWallet:ETH ETH "FIFO"
+2019-08-30 open Assets:Ethereum:GnosisWallet:DAI DAI "FIFO"
 
 2019-08-30 open Equity:Opening-Balances
 
@@ -75,3 +76,12 @@ option "operating_currency" "TWD"
     Expenses:Venue                         40,000.0 TWD
     Expenses:Bank:TransactionFee               15.0 TWD
     Assets:Bank:Cathy:TWD
+
+2019-10-16 * "豐島國際有限公司" "矽膠手環尾款"
+    Expenses:Supplies                        3801.0 TWD
+    Expenses:Bank:TransactionFee               15.0 TWD
+    Assets:Bank:Cathy:TWD
+
+2019-10-16 * "轉換成 DAI 避險"
+    Assets:Ethereum:GnosisWallet:DAI        4,841.125498343072985426 DAI {}
+    Assets:Ethereum:GnosisWallet:ETH          -27.0 ETH {} @ 5,500.0 TWD
