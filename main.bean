@@ -82,6 +82,11 @@ option "operating_currency" "TWD"
     Expenses:Bank:TransactionFee               15.0 TWD
     Assets:Bank:Cathy:TWD
 
+2019-10-15 * "Monolith" "贊助金"
+    tx: "0xdd962038b3c4d57232a4e817aca3989082291dfe22d3d4995b1de5658b2db7cf"
+    Assets:Ethereum:GnosisWallet:ETH            8.72 ETH {5660.0 TWD}
+    Income:Sponsor:ETH
+
 2019-10-16 * "轉換成 DAI 避險"
     Assets:Ethereum:GnosisWallet:DAI        4,841.125498343072985426 DAI {}
     Assets:Ethereum:GnosisWallet:ETH          -27.0 ETH {} @ 5,500.0 TWD
