@@ -18,6 +18,7 @@ include "eth-prices.bean"
 
 2019-08-30 open Income:Sponsor:ETH
 2019-08-30 open Income:Sponsor:TWD
+2019-08-30 open Income:Trade:PnL
 
 2019-10-04 open Expenses:Supplies
 2019-10-04 open Expenses:Bank:TransactionFee
@@ -88,5 +89,6 @@ option "operating_currency" "TWD"
     Income:Sponsor:ETH
 
 2019-10-16 * "轉換成 DAI 避險"
-    Assets:Ethereum:GnosisWallet:DAI        4,841.125498343072985426 DAI {}
-    Assets:Ethereum:GnosisWallet:ETH          -27.0 ETH {} @ 5,500.0 TWD
+    Assets:Ethereum:GnosisWallet:DAI        4,841.125498343072985426 DAI {30.6081846 TWD}
+    Assets:Ethereum:GnosisWallet:ETH          -27.0 ETH {}
+    Income:Trade:PnL
