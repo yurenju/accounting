@@ -97,3 +97,7 @@ option "operating_currency" "TWD"
     Assets:Bank:Cathy:TWD                 145,972.0 TWD
     Assets:Ethereum:GnosisWallet:DAI        -4800.802689 DAI {}
     Income:Trade:PnL
+
+2019-10-19 * "提款"
+    Assets:Cash:TWD                         70000.0 TWD
+    Assets:Bank:Cathy:TWD
