@@ -18,6 +18,8 @@ include "eth-prices.bean"
 
 2019-08-30 open Income:Sponsor:ETH
 2019-08-30 open Income:Sponsor:TWD
+2019-08-30 open Income:RegisteryFee
+
 2019-08-30 open Income:Trade:PnL
 
 2019-10-04 open Expenses:Supplies
@@ -101,3 +103,7 @@ option "operating_currency" "TWD"
 2019-10-19 * "提款"
     Assets:Cash:TWD                         70000.0 TWD
     Assets:Bank:Cathy:TWD
+
+2019-10-19 * "現場報名"
+    Assets:Cash:TWD                          2400.0 TWD
+    Income:RegisteryFee
