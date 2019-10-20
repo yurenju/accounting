@@ -107,3 +107,11 @@ option "operating_currency" "TWD"
 2019-10-19 * "現場報名"
     Assets:Cash:TWD                          2400.0 TWD
     Income:RegisteryFee
+
+2019-10-20 * "礦泉水一箱"
+    Expenses:Supplies                         672.0 TWD
+    Assets:Cash:TWD
+
+2019-10-20 * "衛生紙"
+    Expenses:Supplies                         119.0 TWD
+    Assets:Cash:TWD
