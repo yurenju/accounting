@@ -99,7 +99,7 @@ option "operating_currency" "TWD"
 
 2019-10-17 * "把 DAI 換成台幣"
     Assets:Bank:Cathy:TWD                 145,972.0 TWD
-    Assets:Ethereum:GnosisWallet:DAI        -4800.802689 DAI {}
+    Assets:Ethereum:GnosisWallet:DAI        -4841.12 DAI {}
     Income:Trade:PnL
 
 2019-10-19 * "提款"
@@ -129,3 +129,7 @@ option "operating_currency" "TWD"
 2019-10-20 * "退費給 CTF 得獎者的購票折扣"
     Expenses:TicketRefund                     720.0 TWD
     Assets:Cash:TWD
+
+2019-10-20 * "After party 餐費"
+    Expenses:Food                          34,940.0 TWD
+    Assets:Cash:TWD 
