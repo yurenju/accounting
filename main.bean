@@ -25,6 +25,7 @@ include "eth-prices.bean"
 2019-10-04 open Expenses:Supplies
 2019-10-04 open Expenses:Bank:TransactionFee
 2019-10-09 open Expenses:Venue
+2019-10-09 open Expenses:Food
 
 option "operating_currency" "TWD"
 
@@ -114,4 +115,8 @@ option "operating_currency" "TWD"
 
 2019-10-20 * "衛生紙"
     Expenses:Supplies                         119.0 TWD
+    Assets:Cash:TWD
+
+2019-10-20 * "講者便當"
+    Expenses:Food                            9450.0 TWD
     Assets:Cash:TWD
