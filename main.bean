@@ -26,6 +26,7 @@ include "eth-prices.bean"
 2019-10-04 open Expenses:Bank:TransactionFee
 2019-10-09 open Expenses:Venue
 2019-10-09 open Expenses:Food
+2019-10-09 open Expenses:TicketRefund
 
 option "operating_currency" "TWD"
 
@@ -119,4 +120,12 @@ option "operating_currency" "TWD"
 
 2019-10-20 * "講者便當"
     Expenses:Food                            9450.0 TWD
+    Assets:Cash:TWD
+
+2019-10-20 * "額外加點的點心"
+    Expenses:Food                            4650.0 TWD
+    Assets:Cash:TWD
+
+2019-10-20 * "退費給 CTF 得獎者的購票折扣"
+    Expenses:TicketRefund                     720.0 TWD
     Assets:Cash:TWD
