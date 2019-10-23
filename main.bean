@@ -19,6 +19,7 @@ include "eth-prices.bean"
 2019-08-30 open Income:Sponsor:ETH
 2019-08-30 open Income:Sponsor:TWD
 2019-08-30 open Income:RegisteryFee
+2019-08-30 open Income:PreviousEventRevenue
 
 2019-08-30 open Income:Trade:PnL
 
@@ -27,6 +28,8 @@ include "eth-prices.bean"
 2019-10-09 open Expenses:Venue
 2019-10-09 open Expenses:Food
 2019-10-09 open Expenses:TicketRefund
+2019-10-09 open Expenses:Wifi
+2019-10-23 open Expenses:Recording
 
 option "operating_currency" "TWD"
 
@@ -132,4 +135,23 @@ option "operating_currency" "TWD"
 
 2019-10-20 * "After party 餐費"
     Expenses:Food                          34,940.0 TWD
-    Assets:Cash:TWD 
+    Assets:Cash:TWD
+
+2019-10-21 * "之前活動盈餘款項"
+    Assets:Bank:Cathy:TWD                  22,303.0 TWD
+    Income:PreviousEventRevenue
+
+2019-10-23 * "星衍數位印刷有限公司" "印刷輸出"
+    Expenses:Supplies                       8,620.0 TWD
+    Expenses:Bank:TransactionFee               15.0 TWD
+    Assets:Bank:Cathy:TWD
+
+2019-10-23 * "可立可股份有限公司" "Wifi"
+    Expenses:Wifi                          30,000.0 TWD
+    Expenses:Bank:TransactionFee               15.0 TWD
+    Assets:Bank:Cathy:TWD
+
+2019-10-23 * "活動錄影紀錄"
+    Expenses:Recording                     24,000.0 TWD
+    Expenses:Bank:TransactionFee               15.0 TWD
+    Assets:Bank:Cathy:TWD
