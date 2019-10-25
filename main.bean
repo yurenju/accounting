@@ -30,6 +30,7 @@ include "eth-prices.bean"
 2019-10-09 open Expenses:TicketRefund
 2019-10-09 open Expenses:Wifi
 2019-10-23 open Expenses:Recording
+2019-10-23 open Expenses:Insurance
 
 option "operating_currency" "TWD"
 
@@ -153,5 +154,10 @@ option "operating_currency" "TWD"
 
 2019-10-23 * "活動錄影紀錄"
     Expenses:Recording                     24,000.0 TWD
+    Expenses:Bank:TransactionFee               15.0 TWD
+    Assets:Bank:Cathy:TWD
+
+2019-10-25 * "第一產物保險股份有限公司" "活動保險"
+    Expenses:Insurance                      2,480.0 TWD
     Expenses:Bank:TransactionFee               15.0 TWD
     Assets:Bank:Cathy:TWD
