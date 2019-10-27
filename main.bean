@@ -192,3 +192,13 @@ option "operating_currency" "TWD"
     Expenses:FlightTicketAllowance            250.3216 DAI {30.5782344 TWD}
     Assets:Ethereum:GnosisWallet:DAI         -250.3216 DAI {}
     Income:Trade:PnL
+
+2019-10-27 * "ETH 換 DAI"
+    Assets:Ethereum:GnosisWallet:DAI          218.140783827457422974 DAI {30.5782344 TWD}
+    Assets:Ethereum:GnosisWallet:ETH           -1.22 ETH {}
+    Income:Trade:PnL
+
+
+2019-10-27 * "DAI 機票補助補發金額"
+    Expenses:FlightTicketAllowance            229.6784 DAI {30.5782344 TWD}
+    Assets:Ethereum:GnosisWallet:DAI         -229.6784 DAI {}
