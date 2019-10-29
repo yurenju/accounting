@@ -202,3 +202,8 @@ option "operating_currency" "TWD"
 2019-10-27 * "DAI 機票補助補發金額"
     Expenses:FlightTicketAllowance            229.6784 DAI {30.5782344 TWD}
     Assets:Ethereum:GnosisWallet:DAI         -229.6784 DAI {}
+
+2019-10-29 * "日觀實業" "參加者便當、會議點心"
+    Expenses:Food                          79,240.0 TWD
+    Expenses:Bank:TransactionFee               15.0 TWD
+    Assets:Bank:Cathy:TWD
