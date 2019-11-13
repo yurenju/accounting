@@ -34,6 +34,7 @@ include "eth-prices.bean"
 2019-10-23 open Expenses:HostFee
 2019-10-23 open Expenses:Photography
 2019-10-23 open Expenses:FlightTicketAllowance
+2019-10-23 open Expenses:InvoiceServiceFee
 
 option "operating_currency" "TWD"
 
@@ -205,5 +206,30 @@ option "operating_currency" "TWD"
 
 2019-10-29 * "日觀實業" "參加者便當、會議點心"
     Expenses:Food                          79,240.0 TWD
+    Expenses:Bank:TransactionFee               15.0 TWD
+    Assets:Bank:Cathy:TWD
+
+2019-11-11 * "Accupass" "門票收入"
+    Assets:Bank:Cathy:TWD                 156,538.0 TWD
+    Income:RegisteryFee
+
+2019-11-13 * "共識科技" "代開發票服務費"
+    Expenses:InvoiceServiceFee             11,061.0 TWD
+    Expenses:Bank:TransactionFee               15.0 TWD
+    Assets:Bank:Cathy:TWD
+
+2019-11-13 * "雜支"
+    Expenses:Supplies                         779.0 TWD ; 乾電池、印刷品等
+    Expenses:Supplies                         788.0 TWD ; 礦泉水
+    Expenses:Food                          15,034.0 TWD ; 慶功宴
+    Assets:Bank:Cathy:TWD
+
+2019-11-13 * "給設計師的衣服與運費"
+    Expenses:Supplies                       1,845.0 TWD
+    Expenses:Bank:TransactionFee               15.0 TWD
+    Assets:Bank:Cathy:TWD
+
+2019-11-13 * "會場油漆掉落的補油漆費用"
+    Expenses:Supplies                       1,750.0 TWD
     Expenses:Bank:TransactionFee               15.0 TWD
     Assets:Bank:Cathy:TWD
