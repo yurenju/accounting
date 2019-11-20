@@ -233,3 +233,9 @@ option "operating_currency" "TWD"
     Expenses:Supplies                       1,750.0 TWD
     Expenses:Bank:TransactionFee               15.0 TWD
     Assets:Bank:Cathy:TWD
+
+2019-11-20 * "把台幣全部換成 DAI 2.0"
+    Assets:Bank:Cathy:TWD                -116,419.0 TWD
+    Assets:Cash:TWD                       -21,849.0 TWD
+    Assets:Ethereum:GnosisWallet:DAI        4,486.771749455375278881 DAI {30.450 TWD}
+    Income:Trade:PnL
