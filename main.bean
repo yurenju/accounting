@@ -260,14 +260,16 @@ option "operating_currency" "TWD"
 2021-08-01 * "DAI 轉到新的 gnosis safe wallet"
     tx: "https://etherscan.io/tx/0x7b4600dd6465f1881e418290cc20e8aec23453c0854b494be8aabb337f282119"
     note: "原本的 multisign 要 deprecated 了，DAI 需要轉移到新 Wallet"
-    Assets:Ethereum:GnosisSafe:DAI 4,492.74 DAI
-    Assets:Ethereum:GnosisWallet:DAI
+    Assets:Ethereum:GnosisSafe:DAI 4,492.74 DAI {27.89 TWD}
+    Assets:Ethereum:GnosisWallet:DAI -4,492.74 DAI {}
+    Income:Trade:PnL
 
 2021-08-01 * "ETH 轉到新的 gnosis safe wallet"
     tx: "https://etherscan.io/tx/0xdb049f6b453fa5db344b87f3bef964011ef736c3ebe8ba7f851c31bbade7e2f5"
     note: "原本的 multisign 要 deprecated 了，ETH 需要轉移到新 Wallet"
-    Assets:Ethereum:GnosisSafe:ETH 16.21 ETH
-    Assets:Ethereum:GnosisWallet:ETH
+    Assets:Ethereum:GnosisSafe:ETH 16.21 ETH {71,554.46 TWD}
+    Assets:Ethereum:GnosisWallet:ETH -16.21 ETH {}
+    Income:Trade:PnL
 
 2021-08-02 balance Assets:Ethereum:GnosisWallet:ETH 0.014117511970388476 ETH
 2021-08-02 balance Assets:Ethereum:GnosisWallet:DAI 0.004148135457049726 DAI
