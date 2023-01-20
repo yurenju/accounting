@@ -11,7 +11,7 @@ include "eth-prices.bean"
 2019-08-30 open Assets:Ethereum:GnosisWallet:DAI DAI "FIFO"
 
 ; Taipei Ethereum Meetup Gnosis Safe Wallet
-; https://gnosis-safe.io/app/#/safes/0x3BB6938118bbc1e63e56ABB94dBa66570F4BB0d0/balances
+; https://app.safe.global/eth:0x3BB6938118bbc1e63e56ABB94dBa66570F4BB0d0/balances
 2021-08-01 open Assets:Ethereum:GnosisSafe:ETH ETH "FIFO"
 2021-08-01 open Assets:Ethereum:GnosisSafe:DAI DAI "FIFO"
 
@@ -273,3 +273,10 @@ option "operating_currency" "TWD"
 
 2021-08-02 balance Assets:Ethereum:GnosisWallet:ETH 0.014117511970388476 ETH
 2021-08-02 balance Assets:Ethereum:GnosisWallet:DAI 0.004148135457049726 DAI
+
+2023-01-20 * "5 ETH 轉成 DAI 準備付款給 Bing"
+    tx: "https://etherscan.io/tx/0xa66ba9bb9442ec94168ed13eadf51ff2f8d654722667b0a3b00305d143d2595b"
+    note: "約需要支出 10,964.03 DAI，但是只有 4492.74 DAI，所以用 5 ETH 換出 DAI"
+    Assets:Ethereum:GnosisSafe:ETH -5 ETH {}
+    Assets:Ethereum:GnosisSafe:DAI 7,748.392827068036191747 DAI {30.43 TWD}
+    Income:Trade:PnL
