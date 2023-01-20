@@ -42,6 +42,7 @@ include "eth-prices.bean"
 2019-10-23 open Expenses:InvoiceServiceFee
 2019-11-30 open Expenses:EthereumTransactionFee
 2019-10-23 open Expenses:EthereumNameService
+2019-10-23 open Expenses:Salary
 
 option "operating_currency" "TWD"
 
@@ -282,3 +283,8 @@ option "operating_currency" "TWD"
     Assets:Ethereum:GnosisSafe:ETH -5 ETH {}
     Assets:Ethereum:GnosisSafe:DAI 7,748.392827068036191747 DAI {30.43 TWD}
     Income:Trade:PnL
+
+2023-01-20 * "轉帳 10,964.03 DAI 給 Bing"
+    tx: "https://etherscan.io/tx/0x7244065245a9e225b2097a1779015b9bcd0346291afd84ced2053484e340f10d"
+    Assets:Ethereum:GnosisSafe:DAI -10,964.03 DAI {}
+    Expenses:Salary
