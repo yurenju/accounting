@@ -1,5 +1,7 @@
 include "eth-prices.bean"
 
+2019-08-30 custom "fava-option" "language" "en"
+
 2019-08-30 open Assets:Cash:TWD TWD
 
 ; 放在 Yuren 的國泰世華帳戶代管
@@ -24,6 +26,7 @@ include "eth-prices.bean"
 2019-08-30 open Income:Sponsor:TWD
 2019-08-30 open Income:RegisteryFee
 2019-08-30 open Income:PreviousEventRevenue
+2019-08-30 open Income:Donation
 
 2019-08-30 open Income:Trade:PnL
 
@@ -287,3 +290,46 @@ option "operating_currency" "TWD"
     tx: "https://etherscan.io/tx/0x7244065245a9e225b2097a1779015b9bcd0346291afd84ced2053484e340f10d"
     Assets:Ethereum:GnosisSafe -10,964.03 DAI {}
     Expenses:Salary
+
+2023-07-30 * "Nic 捐贈審稿經費"
+    tx: "https://etherscan.io/tx/0x951b513b9ffe1189205b4f38bb3d8a0eb654a248b2b7506c43ee931aa7a176da"
+    Assets:Ethereum:GnosisSafe                 20.0 DAI { 31.34 TWD}
+    Income:Donation
+
+2023-09-14 * "Nic 捐贈審稿經費"
+    tx: "https://etherscan.io/tx/0x22b6b5d14a85f119b5a1d7ffdabf371f2a03af23c81486f21184f6f7d05767fb"
+    Assets:Ethereum:GnosisSafe                 60.0 DAI { 31.83 TWD}
+    Income:Donation
+
+2023-09-14 * "Nic 捐贈審稿經費 - 2 (同一天)"
+    tx: "https://etherscan.io/tx/0x87170b0969f18f322e0c1c61569621352921e0054c2822741cf7824976e6e5d2"
+    Assets:Ethereum:GnosisSafe                 60.0 DAI { 31.83 TWD}
+    Income:Donation
+
+2023-10-05 * "Nic 捐贈審稿經費"
+    tx: "https://etherscan.io/tx/0x99ef4a7ddf6fd4c900b59761f3c2d337e78220540eb10c98e58a831318e8e26d"
+    Assets:Ethereum:GnosisSafe                 40.0 DAI { 32.27 TWD}
+    Income:Donation
+
+
+2024-01-15 * "Nic 捐贈審稿經費"
+    tx: "https://etherscan.io/tx/0x0a4ce1c4d8567f8951040db217165cf13d20a611b2adf31a71c244176e285f77"
+    Assets:Ethereum:GnosisSafe                 40.0 DAI { 30.94 TWD}
+    Income:Donation
+
+2024-01-30 * "LunDAO 捐款 5 ETH"
+    tx: "https://etherscan.io/tx/0xeef3467e94b20855399873f273f860269696626adca36deb8fc9a0fd0c5e0964"
+    Assets:Ethereum:GnosisSafe                  5.00 ETH {72215.36 TWD}
+    Income:Donation
+
+2024-03-07 * "Bing 申請 400 USD - 04/23 TEM Happy Hour"
+    tx: "https://etherscan.io/tx/0x7b8bf98c8ddd8aa84cbc043f03bf30d2e325853853d0733b891ebce72d59fa1c"
+    url: "https://hackmd.io/@hugebing/BkQN3ZU6a"
+    Assets:Ethereum:GnosisSafe               -400.00 DAI {}
+    Expenses:Venue
+
+2024-04-07 price ETH 109,021 TWD
+2024-04-07 price DAI 32.14 TWD
+
+2024-04-08 balance Assets:Ethereum:GnosisSafe 16.21 ETH
+2024-04-08 balance Assets:Ethereum:GnosisSafe 1,097.102827068036191747 DAI
