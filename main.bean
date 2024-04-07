@@ -12,8 +12,7 @@ include "eth-prices.bean"
 
 ; Taipei Ethereum Meetup Gnosis Safe Wallet
 ; https://app.safe.global/eth:0x3BB6938118bbc1e63e56ABB94dBa66570F4BB0d0/balances
-2021-08-01 open Assets:Ethereum:GnosisSafe:ETH ETH "FIFO"
-2021-08-01 open Assets:Ethereum:GnosisSafe:DAI DAI "FIFO"
+2021-08-01 open Assets:Ethereum:GnosisSafe "FIFO"
 
 2019-08-30 open Equity:Opening-Balances
 
@@ -261,16 +260,16 @@ option "operating_currency" "TWD"
 2021-08-01 * "DAI 轉到新的 gnosis safe wallet"
     tx: "https://etherscan.io/tx/0x7b4600dd6465f1881e418290cc20e8aec23453c0854b494be8aabb337f282119"
     note: "原本的 multisign 要 deprecated 了，DAI 需要轉移到新 Wallet"
-    Assets:Ethereum:GnosisSafe:DAI 5.972398680081770845 DAI {30.5782344 TWD, 2019-10-27}
-    Assets:Ethereum:GnosisSafe:DAI 4486.767601319918229155 DAI {30.450 TWD, 2019-11-20}
+    Assets:Ethereum:GnosisSafe 5.972398680081770845 DAI {30.5782344 TWD, 2019-10-27}
+    Assets:Ethereum:GnosisSafe 4486.767601319918229155 DAI {30.450 TWD, 2019-11-20}
     Assets:Ethereum:GnosisWallet:DAI -5.972398680081770845 DAI {30.5782344 TWD, 2019-10-27}
     Assets:Ethereum:GnosisWallet:DAI -4486.767601319918229155 DAI {30.450 TWD, 2019-11-20}
 
 2021-08-01 * "ETH 轉到新的 gnosis safe wallet"
     tx: "https://etherscan.io/tx/0xdb049f6b453fa5db344b87f3bef964011ef736c3ebe8ba7f851c31bbade7e2f5"
     note: "原本的 multisign 要 deprecated 了，ETH 需要轉移到新 Wallet"
-    Assets:Ethereum:GnosisSafe:ETH 7.504117511970388476 ETH {5200.0 TWD, 2019-09-27}
-    Assets:Ethereum:GnosisSafe:ETH 8.705882488029611524 ETH {5660.0 TWD, 2019-10-15}
+    Assets:Ethereum:GnosisSafe 7.504117511970388476 ETH {5200.0 TWD, 2019-09-27}
+    Assets:Ethereum:GnosisSafe 8.705882488029611524 ETH {5660.0 TWD, 2019-10-15}
     Assets:Ethereum:GnosisWallet:ETH -7.504117511970388476 ETH {5200.0 TWD, 2019-09-27}
     Assets:Ethereum:GnosisWallet:ETH -8.705882488029611524 ETH {5660.0 TWD, 2019-10-15}
 
@@ -280,11 +279,11 @@ option "operating_currency" "TWD"
 2023-01-20 * "5 ETH 轉成 DAI 準備付款給 Bing"
     tx: "https://etherscan.io/tx/0xa66ba9bb9442ec94168ed13eadf51ff2f8d654722667b0a3b00305d143d2595b"
     note: "約需要支出 10,964.03 DAI，但是只有 4492.74 DAI，所以用 5 ETH 換出 DAI"
-    Assets:Ethereum:GnosisSafe:ETH -5 ETH {}
-    Assets:Ethereum:GnosisSafe:DAI 7,748.392827068036191747 DAI {30.43 TWD}
+    Assets:Ethereum:GnosisSafe -5 ETH {}
+    Assets:Ethereum:GnosisSafe 7,748.392827068036191747 DAI {30.43 TWD}
     Income:Trade:PnL
 
 2023-01-20 * "轉帳 10,964.03 DAI 給 Bing"
     tx: "https://etherscan.io/tx/0x7244065245a9e225b2097a1779015b9bcd0346291afd84ced2053484e340f10d"
-    Assets:Ethereum:GnosisSafe:DAI -10,964.03 DAI {}
+    Assets:Ethereum:GnosisSafe -10,964.03 DAI {}
     Expenses:Salary
