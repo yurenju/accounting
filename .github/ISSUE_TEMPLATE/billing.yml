@@ -8,7 +8,6 @@ body:
     attributes:
       label: 暱稱
       description: 帳務處理人可以知道你是誰的暱稱
-      value: nickname
     validations:
       required: true
   - type: dropdown
