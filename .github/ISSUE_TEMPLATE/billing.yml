@@ -26,9 +26,7 @@ body:
     attributes:
       label: 帳務處理人是否認識你
       description: |
-        如果帳務處理人不認識你，
-        請先加入我們的 [Discord](https://discord.gg/Xg2A3PDU) 並且
-        在 \#general 詢問誰是帳務處理人
+        如果帳務處理人不認識你，請先加入我們的 [Discord](https://discord.gg/Xg2A3PDU) 並且在 \#general 詢問誰是帳務處理人
       options:
         - label: 帳務處理人可以從暱稱知道如何聯絡我
           required: true
@@ -40,6 +38,7 @@ body:
         - ETH
         - DAI
       default: 0
+      required: true
   - type: input
     attributes:
       label: 金額
@@ -51,17 +50,17 @@ body:
     attributes:
       label: Ethereum 主網帳號地址或 ENS
       description: 請填入你的 Ethereum 主網帳號地址或 ENS
-  - type: markdown
+  - type: textarea
     attributes:
+      label: 請款項目
+      description: 如果已經花費請寫實際金額，預先申請的情況請填預算金額
       value: |
-        ### 請款項目
-        如果已經花費請寫實際金額，預先申請的情況請填預算金額
         | 項目         | 用途說明                     | 金額 (TWD) |
         | ------------ | ---------------------------- | ---------- |
         | 例：場地租借 | 用於 XXXX 活動的場地租借費用 | XXX TWD    |
         |              |                              |            |
         | **總計**     |                              | XXX TWD    |
-
-        ### 附件或其他補充資訊
-        如有任何其他需要補充的附件、資訊或說明，請在此處詳細記述。如果你的附件內
-        有隱私資訊如電子郵件，請截圖並且遮蔽隱私資訊。
+  - type: textarea
+    attributes:
+      label: 附件或其他補充資訊
+      description: 如有任何其他需要補充的附件、資訊或說明，請在此處詳細記述。如果你的附件內有隱私資訊如電子郵件，請截圖並且遮蔽隱私資訊。
