@@ -1,0 +1,67 @@
+name: 請款申請
+description: 申請 TEM 款項補述
+title: "[請款]: "
+assignees:
+  - yurenju
+body:
+  - type: input
+    attributes:
+      label: 暱稱
+      description: 帳務處理人可以知道你是誰的暱稱
+      value: nickname
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: 類型
+      description: 這是尚未支出的預算，或是已經支出的請款費用
+      multiple: false
+      options:
+        - 已經支出
+        - 預算
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: 帳務處理人是否認識你
+      description: |
+        如果帳務處理人不認識你，
+        請先加入我們的 [Discord](https://discord.gg/Xg2A3PDU) 並且
+        在 \#general 詢問誰是帳務處理人
+      options:
+        - label: 帳務處理人可以從暱稱知道如何聯絡我
+          required: true
+  - type: dropdown
+    attributes:
+      label: 代幣種類
+      description: 你想要接收的代幣種類，僅支援主網上的 ETH 或 DAI
+      options:
+        - ETH
+        - DAI
+      default: 0
+  - type: input
+    attributes:
+      label: 金額
+      description: 請填入你想要請款的金額
+      value: 0
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Ethereum 主網帳號地址或 ENS
+      description: 請填入你的 Ethereum 主網帳號地址或 ENS
+  - type: markdown
+    attributes:
+      value: |
+        ### 請款項目
+        如果已經花費請寫實際金額，預先申請的情況請填預算金額
+        | 項目         | 用途說明                     | 金額 (TWD) |
+        | ------------ | ---------------------------- | ---------- |
+        | 例：場地租借 | 用於 XXXX 活動的場地租借費用 | XXX TWD    |
+        |              |                              |            |
+        | **總計**     |                              | XXX TWD    |
+
+        ### 附件或其他補充資訊
+        如有任何其他需要補充的附件、資訊或說明，請在此處詳細記述。如果你的附件內
+        有隱私資訊如電子郵件，請截圖並且遮蔽隱私資訊。
