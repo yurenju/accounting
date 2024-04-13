@@ -44,7 +44,7 @@ body:
     attributes:
       label: 金額
       description: 請填入你想要請款的金額
-      value: 0
+      value: "0"
     validations:
       required: true
   - type: input
