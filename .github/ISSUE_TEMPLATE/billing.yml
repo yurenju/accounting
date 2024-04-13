@@ -38,6 +38,7 @@ body:
         - ETH
         - DAI
       default: 0
+    validations:
       required: true
   - type: input
     attributes:
