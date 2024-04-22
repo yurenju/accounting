@@ -45,6 +45,7 @@ include "eth-prices.bean"
 2019-11-30 open Expenses:EthereumTransactionFee
 2019-10-23 open Expenses:EthereumNameService
 2019-10-23 open Expenses:Salary
+2019-10-23 open Expenses:Grant
 
 option "operating_currency" "TWD"
 
@@ -333,3 +334,16 @@ option "operating_currency" "TWD"
 
 2024-04-08 balance Assets:Ethereum:GnosisSafe 16.21 ETH
 2024-04-08 balance Assets:Ethereum:GnosisSafe 1,097.102827068036191747 DAI
+
+2024-04-22 * "transfer for meetup"
+    url: "https://etherscan.io/tx/0x7404e1e729fec021e7b437556c1c1918b28dfd104ce7f7fa69084915b4115b31"
+    Assets:Ethereum:GnosisSafe               -188.82 DAI {}
+    Expenses:HostFee
+
+2024-04-22 * "transfer for zk taipei's luma annual fee"
+    url: "https://etherscan.io/tx/0x7404e1e729fec021e7b437556c1c1918b28dfd104ce7f7fa69084915b4115b31"
+    Assets:Ethereum:GnosisSafe               -0.271358859 ETH {}
+    Expenses:Grant
+
+2024-04-23 balance Assets:Ethereum:GnosisSafe 15.938641141 ETH
+2024-04-23 balance Assets:Ethereum:GnosisSafe 908.282827068036191747 DAI
