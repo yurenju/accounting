@@ -347,3 +347,13 @@ option "operating_currency" "TWD"
 
 2024-04-23 balance Assets:Ethereum:GnosisSafe 15.938641141 ETH
 2024-04-23 balance Assets:Ethereum:GnosisSafe 908.282827068036191747 DAI
+
+2024-06-09 price ETH 119,463 TWD
+
+2024-06-09 * "transfer to Bing for 2023 community coordination"
+    url: "https://etherscan.io/tx/0x49e72b3edc219d8e3946a653910995755f9417f5fe061d905eb0b017a7920a27"
+    github: "https://github.com/EtherTW/accounting/issues/10"
+    Assets:Ethereum:GnosisSafe                 -2.90625 ETH {}
+    Expenses:Salary
+
+2024-06-10 balance Assets:Ethereum:GnosisSafe 13.032391141 ETH
