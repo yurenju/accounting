@@ -46,6 +46,7 @@ include "eth-prices.bean"
 2019-10-23 open Expenses:EthereumNameService
 2019-10-23 open Expenses:Salary
 2019-10-23 open Expenses:Grant
+2019-10-23 open Expenses:MistakenTransfer
 
 option "operating_currency" "TWD"
 
@@ -357,3 +358,17 @@ option "operating_currency" "TWD"
     Expenses:Salary
 
 2024-06-10 balance Assets:Ethereum:GnosisSafe 13.032391141 ETH
+
+2024-08-28 * "incorrectly transfer to pinhao.eth"
+    url: "https://etherscan.io/address/0xFe68F1Af3EC88dE31aF9dE0665908357664A4B2F"
+    github: "https://github.com/EtherTW/accounting/issues/12"
+    Assets:Ethereum:GnosisSafe                 -0.25 ETH {}
+    Expenses:MistakenTransfer
+
+2024-08-28 * "transfer to pinhaoc.eth got translation grant"
+    url: "https://etherscan.io/tx/0xc3d566d3660c1cd9fd36a70e3c7fbb4afb3701df373566aa67fd0a0c361a269a"
+    github: "https://github.com/EtherTW/accounting/issues/12"
+    Assets:Ethereum:GnosisSafe                 -0.25 ETH {}
+    Expenses:Grant
+
+2024-08-29 balance Assets:Ethereum:GnosisSafe 12.532391141 ETH
