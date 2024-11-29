@@ -372,3 +372,12 @@ option "operating_currency" "TWD"
     Expenses:Grant
 
 2024-08-29 balance Assets:Ethereum:GnosisSafe 12.532391141 ETH
+
+
+2024-11-29 * "transfer to zk taipei for luma annual fee"
+    url: "https://etherscan.io/tx/0x4e32254b457a0a608eb07e036002bbc161fe24346d94066a00e4196c554f7aaf"
+    github: "https://github.com/EtherTW/accounting/issues/14"
+    Assets:Ethereum:GnosisSafe                 -0.057 ETH {}
+    Expenses:Grant
+
+2024-11-30 balance Assets:Ethereum:GnosisSafe 12.475391141 ETH
